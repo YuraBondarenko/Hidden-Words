@@ -25,4 +25,6 @@
     <string name="login_failed">"Login failed"</string>
     <string name="random_words">AKOJ33OQBICUSBQUKQDIJIQKQQKPSOIFSIOIZNCAJINCNIJISKAILQASIHKDSHCIB</string>
     <string name="random_words_2">ABJADIOWPHOIBJABKCSQDBPKZPAOQCNQOIQNSSFRIQNSIRIAOANKCSYFUOQYR</string>
+    <string name="sing_up_error">Please, try again.</string>
+    <string name="sing_in_error">Incorrect login or password</string>
 </resources>

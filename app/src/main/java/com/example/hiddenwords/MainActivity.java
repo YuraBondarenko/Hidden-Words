@@ -1,8 +1,11 @@
 package com.example.hiddenwords;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.view.animation.Animation;
 import android.widget.Button;
 import android.widget.EditText;
@@ -18,23 +21,21 @@ import java.util.regex.Pattern;
 
 import com.example.hiddenwords.utils.ButtonUtils;
 import com.example.hiddenwords.model.User;
+import com.example.hiddenwords.utils.Checker;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.AuthResult;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
-public class MainActivity extends AppCompatActivity {
-    //   private final RegistrationActivity registrationActivity;
-
-    private final String regex = "^(.+)@(.+)$";
-    private final Pattern pattern = Pattern.compile(regex);
-
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     private EditText login;
     private EditText password;
     private TextView error;
     private Button log_in_button;
     private Button sing_up_button;
     private ProgressBar progressBar;
-
- /*   public MainActivity(RegistrationActivity registrationActivity) {
-        this.registrationActivity = registrationActivity;
-    }*/
+    private FirebaseAuth auth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,32 +47,47 @@ public class MainActivity extends AppCompatActivity {
         error = findViewById(R.id.error);
         log_in_button = findViewById(R.id.log_in);
         sing_up_button = findViewById(R.id.sing_up);
-        // progressBar = findViewById(R.id.progressBar);
+        auth = FirebaseAuth.getInstance();
 
-        log_in_button.setOnClickListener(v -> {
-            ButtonUtils.setButtonsEnableOrDisabled(Arrays.asList(log_in_button, sing_up_button), false);
-            try {
-                Thread.sleep(3000);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-            String login = this.login.getText().toString();
-            String password = this.password.getText().toString();
-            Matcher matcher = pattern.matcher(login);
-            if (!matcher.matches()) {
-                error.setText(R.string.incorrect_login);
-            } else if (password == null || password.length() < 8) {
-                error.setText(R.string.incorrect_password);
-            } else {
-                User user = new User(login, password);
-                //  setContentView(R.layout.activity_login);
-            }
-            ButtonUtils.setButtonsEnableOrDisabled(Arrays.asList(log_in_button, sing_up_button), true);
-        });
-
-        // sing_up_button.setOnClickListener(v -> setContentView(R.layout.activity_registration));
-
+        log_in_button.setOnClickListener(this);
+        sing_up_button.setOnClickListener(this);
     }
 
+    @Override
+    protected void onStart() {
+        super.onStart();
+        FirebaseUser user = auth.getCurrentUser();
+        if (user != null) {
+            //startActivity(new Intent(RegistrationActivity.this, LevelsActivity.class));
+        }
+    }
 
+    @Override
+    public void onClick(View view) {
+        if (view.getId() == R.id.log_in) {
+            String login = this.login.getText().toString();
+            String password = this.password.getText().toString();
+            if (Checker.checkLogin(login)) {
+                error.setText(R.string.incorrect_login);
+            } else if (Checker.checkPassword(password)) {
+                error.setText(R.string.incorrect_password);
+            } else {
+                auth.signInWithEmailAndPassword(login, password).addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
+                    @Override
+                    public void onComplete(@NonNull Task<AuthResult> task) {
+                        if (task.isSuccessful()) {
+                            //startActivity(new Intent(RegistrationActivity.this, LevelsActivity.class));
+                            System.out.println(auth.getCurrentUser());
+                            System.out.println(auth.getCurrentUser().getDisplayName());
+                            error.setText(auth.getCurrentUser().getEmail());
+                        } else {
+                            error.setText(R.string.sing_in_error);
+                        }
+                    }
+                });
+            }
+        } else if (view.getId() == R.id.sing_up) {
+            startActivity(new Intent(MainActivity.this, RegistrationActivity.class));
+        }
+    }
 }
