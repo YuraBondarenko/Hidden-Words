@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "569941118899",
+    "project_id": "hidden-words-5d593",
+    "storage_bucket": "hidden-words-5d593.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:569941118899:android:9f9afe058609983cae85c6",
+        "android_client_info": {
+          "package_name": "com.example.hiddenwords"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "569941118899-80mgpe8g3fq2mj531p77c5quc1mkd9a4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD9j1scFu67sMl_Qc_E_xP8KlsYgEepk8k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "569941118899-80mgpe8g3fq2mj531p77c5quc1mkd9a4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
