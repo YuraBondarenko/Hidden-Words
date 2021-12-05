@@ -1,3 +1,28 @@
 <resources>
     <string name="app_name">Hidden Words</string>
+    <string name="welcome_to">WELCOME TO</string>
+    <string name="game_name_upper">HIDDEN WORDS</string>
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <string name="log_in">Log in</string>
+    <string name="hidden">HIDDEN</string>
+    <string name="abc">ABC</string>
+    <string name="qld">QLD</string>
+    <string name="vsd">VSD</string>
+    <string name="words">WORDS</string>
+    <string name="sing_up">SING UP</string>
+    <string name="incorrect_login">Incorrect login</string>
+    <string name="incorrect_password">Incorrect password. It must be more than 8 characters.</string>
+    <string name="zxc">ZXC</string>
+    <string name="title_activity_registration">RegistrationActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="random_words">AKOJ33OQBICUSBQUKQDIJIQKQQKPSOIFSIOIZNCAJINCNIJISKAILQASIHKDSHCIB</string>
+    <string name="random_words_2">ABJADIOWPHOIBJABKCSQDBPKZPAOQCNQOIQNSSFRIQNSIRIAOANKCSYFUOQYR</string>
 </resources>
