@@ -58,7 +58,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onStart();
         FirebaseUser user = auth.getCurrentUser();
         if (user != null) {
-            //startActivity(new Intent(RegistrationActivity.this, LevelsActivity.class));
+            startActivity(new Intent(MainActivity.this, LevelsActivity.class));
         }
     }
 
@@ -72,17 +72,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             } else if (Checker.checkPassword(password)) {
                 error.setText(R.string.incorrect_password);
             } else {
-                auth.signInWithEmailAndPassword(login, password).addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
-                    @Override
-                    public void onComplete(@NonNull Task<AuthResult> task) {
-                        if (task.isSuccessful()) {
-                            //startActivity(new Intent(RegistrationActivity.this, LevelsActivity.class));
-                            System.out.println(auth.getCurrentUser());
-                            System.out.println(auth.getCurrentUser().getDisplayName());
-                            error.setText(auth.getCurrentUser().getEmail());
-                        } else {
-                            error.setText(R.string.sing_in_error);
-                        }
+                auth.signInWithEmailAndPassword(login, password).addOnCompleteListener(this, task -> {
+                    if (task.isSuccessful()) {
+                        startActivity(new Intent(MainActivity.this, LevelsActivity.class));
+                    } else {
+                        error.setText(R.string.sing_in_error);
                     }
                 });
             }
