@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".LevelsActivity">
+
+
+    <TextView
+        android:id="@+id/levels"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/levels"
+        android:layout_marginTop="10sp"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:textColor="@color/white" />
+
+
+    <Button
+        android:id="@+id/level1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40sp"
+        android:layout_below="@+id/levels"
+
+        android:layout_marginTop="20sp"
+        android:text="@string/one"
+        android:textSize="10sp"
+        android:layout_marginStart="35sp"
+        tools:ignore="SmallSp" />
+
+    <Button
+        android:id="@+id/level2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/level1"
+        android:layout_marginLeft="40sp"
+        android:layout_marginTop="20sp"
+        android:layout_below="@+id/levels"
+
+        android:text="@string/two"
+        android:textSize="10sp"
+        tools:layout_editor_absoluteX="161dp"
+        tools:layout_editor_absoluteY="36dp"
+        android:layout_toEndOf="@+id/level1"
+        android:layout_marginStart="40sp"
+        tools:ignore="SmallSp" />
+
+    <Button
+        android:id="@+id/level3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/level2"
+        android:layout_marginLeft="40sp"
+        android:layout_marginTop="20sp"
+        android:layout_below="@+id/levels"
+        android:text="@string/three"
+        android:textSize="10sp"
+        android:layout_toEndOf="@+id/level2"
+        android:layout_marginStart="40sp"
+        tools:ignore="SmallSp" />
+
+    <Button
+        android:id="@+id/level4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40sp"
+        android:layout_marginTop="100sp"
+        android:layout_below="@+id/levels"
+        android:text="@string/four"
+        android:textSize="10sp"
+        android:layout_marginStart="35sp"
+        tools:ignore="SmallSp" />
+
+    <Button
+        android:id="@+id/level5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/level4"
+        android:layout_marginLeft="40sp"
+        android:layout_marginTop="100sp"
+        android:layout_below="@+id/levels"
+        android:text="@string/five"
+        android:textSize="10sp"
+        android:layout_toEndOf="@+id/level4"
+        android:layout_marginStart="40sp"
+        tools:ignore="SmallSp" />
+
+    <Button
+        android:id="@+id/level6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/level5"
+        android:layout_marginLeft="40sp"
+        android:layout_marginTop="100sp"
+        android:layout_below="@+id/levels"
+        android:text="@string/six"
+        android:textSize="10sp"
+        android:layout_toEndOf="@+id/level5"
+        android:layout_marginStart="40sp"
+        tools:ignore="SmallSp" />
+
+    <Button
+        android:id="@+id/level7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40sp"
+        android:layout_marginTop="180sp"
+        android:layout_below="@+id/levels"
+        android:text="@string/seven"
+        android:textSize="10sp"
+        android:layout_marginStart="35sp"
+        tools:ignore="SmallSp" />
+
+    <Button
+        android:id="@+id/level8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/level7"
+        android:layout_marginLeft="40sp"
+        android:layout_marginTop="180sp"
+        android:layout_below="@+id/levels"
+        android:text="@string/eigth"
+        android:textSize="10sp"
+        android:layout_toEndOf="@+id/level7"
+        android:layout_marginStart="40sp"
+        tools:ignore="SmallSp" />
+
+    <Button
+        android:id="@+id/level9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/level8"
+        android:layout_marginLeft="40sp"
+        android:layout_marginTop="180sp"
+        android:layout_below="@+id/levels"
+        android:text="@string/nine"
+        android:textSize="10sp"
+        android:layout_toEndOf="@+id/level8"
+        android:layout_marginStart="40sp"
+        tools:ignore="SmallSp" />
+
+    <Switch
+        android:id="@+id/main_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/levels"
+        android:layout_marginStart="166dp"
+        android:layout_marginLeft="167dp"
+        android:layout_marginTop="540dp"
+        android:text="@string/profile"
+        android:textColor="@color/white"
+        android:checked="false"
+        android:textOff="@string/profile"
+        android:textOn="@string/levels"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/switch_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/levels"
+        android:layout_marginStart="166dp"
+        android:layout_marginLeft="167dp"
+        android:layout_marginTop="540dp"
+        android:textColor="@color/white"
+        android:background="@android:color/transparent"
+        android:checked="false"
+        android:textOff="@string/profile"
+        android:textOn="@string/levels"
+        android:textSize="20sp" />
+
+
+</RelativeLayout>

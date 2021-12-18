@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".ProfileActivity">
+
+    <TextView
+        android:id="@+id/profile_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        android:text="@string/your_profile"
+        android:textColor="@color/white"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        android:layout_alignTop="@+id/profile_text"
+        android:textColor="@color/white"
+        android:layout_marginTop="75dp"
+        android:gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/achievements"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        android:layout_alignTop="@+id/email"
+        android:text="@string/achievements"
+        android:textColor="@color/white"
+        android:layout_marginTop="100sp"
+        android:gravity="center_horizontal" />
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/email"
+        android:layout_marginTop="550dp"
+        android:text="@string/logout" />
+
+
+    <Switch
+        android:id="@+id/main_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/email"
+        android:layout_marginStart="166dp"
+        android:layout_marginLeft="167dp"
+        android:layout_marginTop="450dp"
+        android:text="@string/levels"
+        android:textColor="@color/white"
+        android:checked="true"
+        android:textOff="@string/profile"
+        android:textOn="@string/levels"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/button_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/email"
+        android:layout_marginStart="145dp"
+        android:width="150dp"
+        android:layout_marginLeft="167dp"
+        android:layout_marginTop="440dp"
+        android:textColor="@color/white"
+        android:background="@android:color/transparent"
+        android:textSize="20sp" />
+
+    <!--
+        <nl.joery.animatedbottombar.AnimatedBottomBar
+            android:id="@+id/bottom_bar"
+            android:background="#FFF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:abb_selectedTabType="text"
+            app:abb_indicatorAppearance="round"
+            app:abb_indicatorMargin="16dp"
+            app:abb_indicatorHeight="4dp"
+            app:abb_tabs="@menu/tabs"
+            app:abb_selectedIndex="1" />-->
+</RelativeLayout>

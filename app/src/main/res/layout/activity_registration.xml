@@ -65,7 +65,7 @@
 
 
     <Button
-        android:id="@+id/sing_up"
+        android:id="@+id/sing_up_registration"
         android:layout_width="206dp"
         android:layout_height="49dp"
         android:text="@string/sing_up"
@@ -73,6 +73,18 @@
         tools:ignore="MissingConstraints"
         android:layout_marginStart="110dp"
         android:layout_below="@+id/password"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="20dp" />
+
+    <Button
+        android:id="@+id/log_in_registration"
+        android:layout_width="206dp"
+        android:layout_height="49dp"
+        android:text="@string/log_in"
+        android:textColor="@color/black"
+        tools:ignore="MissingConstraints"
+        android:layout_marginStart="110dp"
+        android:layout_below="@+id/sing_up_registration"
         android:layout_marginLeft="110dp"
         android:layout_marginTop="20dp" />
 

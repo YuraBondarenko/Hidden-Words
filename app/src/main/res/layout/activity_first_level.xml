@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".FirstLevelActivity">
+
+    <TextView
+        android:id="@+id/first_level"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/first_level"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textColor="@color/white"
+        tools:layout_editor_absoluteX="136dp"
+        tools:layout_editor_absoluteY="16dp"
+        tools:ignore="MissingConstraints"
+        android:gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/randomWords1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AKOJI33OQBICUSBQUDIJIQKQQKPISOIFSIOIZ"
+        android:textColor="@color/white"
+        android:layout_marginTop="60dp"
+        android:layout_below="@+id/first_level"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/randomWords2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NCAJINCNIJISKAILQASIHKDSHCIB"
+        android:textColor="@color/white"
+        android:layout_marginTop="80dp"
+        android:layout_below="@+id/first_level"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/first_word"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/first_level"
+        android:layout_alignEnd="@id/randomWords1"
+        android:layout_alignRight="@id/randomWords1"
+        android:layout_marginTop="80dp"
+        android:text="@string/hamster"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/randomWords3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="APIHFJNQOPWHFOBNLK"
+        android:textColor="@color/white"
+        android:layout_marginTop="100dp"
+        android:layout_below="@+id/first_level"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/second_word"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/first_level"
+        android:layout_toRightOf="@id/randomWords3"
+        android:layout_marginTop="100dp"
+        android:text="@string/number"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/randomWords4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="XAOQIOPJI"
+        android:textColor="@color/white"
+        android:layout_toRightOf="@id/second_word"
+        android:layout_marginTop="100dp"
+        android:layout_below="@+id/first_level"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/randomWords5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AJPQHOUDBIYEWGFGBCKJQKLDQHDUUICW"
+        android:textColor="@color/white"
+        android:layout_marginTop="120dp"
+        android:layout_below="@+id/first_level"
+        android:textSize="20sp" />
+
+
+    <TextView
+        android:id="@+id/third_word"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/first_level"
+        android:layout_marginTop="160dp"
+        android:text="@string/cucumber"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/randomWords6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="VWIRUGOPFEWIKFPONWOINCUG"
+        android:textColor="@color/white"
+        android:layout_toRightOf="@id/third_word"
+        android:layout_marginTop="160dp"
+        android:layout_below="@+id/first_level"
+        android:textSize="20sp" />
+
+
+    <TextView
+        android:id="@+id/randomWords7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AMCKOWOUIGQBNPQCIHZCMOPIPJFSPKQXI"
+        android:textColor="@color/white"
+        android:layout_marginTop="180dp"
+        android:layout_below="@+id/first_level"
+        android:textSize="20sp" />
+
+
+    <TextView
+        android:id="@+id/randomWords8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GEWIPONVWIRUGOPFEWKFPONWOINCUWIG"
+        android:textColor="@color/white"
+        android:layout_marginTop="140dp"
+        android:layout_below="@+id/first_level"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/randomWords9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GEWIPONVWIRUGOPFEWKFPONWOINCUWIG"
+        android:textColor="@color/white"
+        android:layout_marginTop="200dp"
+        android:layout_below="@+id/first_level"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/fourth_word"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/engineering"
+        android:textColor="@color/white"
+        android:layout_marginTop="220dp"
+        android:layout_toRightOf="@id/randomWords10"
+        android:layout_below="@+id/first_level"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/randomWords10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="QODUQ"
+        android:textColor="@color/white"
+        android:layout_marginTop="220dp"
+        android:layout_below="@+id/first_level"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/randomWords11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FNIOFEHFIUQSVNKAOL"
+        android:textColor="@color/white"
+        android:layout_marginTop="220dp"
+        android:layout_toRightOf="@id/fourth_word"
+        android:layout_below="@+id/first_level"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/randomWords114"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ANIOWHIUQOPKCSPOIHFUSQOPJOFIHIFUIHI"
+        android:textColor="@color/white"
+        android:layout_marginTop="260dp"
+        android:layout_below="@+id/first_level"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/randomWords12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FNIOFQQNIOFWHUIHVSLAHFIUQSVNKAOLAI"
+        android:textColor="@color/white"
+        android:layout_marginTop="240dp"
+        android:layout_below="@+id/first_level"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/randomWords16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="QFOSWFJOISNVMSPAIOQOIFHQAJDOIFHOW"
+        android:textColor="@color/white"
+        android:layout_marginTop="280dp"
+        android:layout_below="@+id/first_level"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/randomWords13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="QGWQJFOPQSICSJFOHIQOPKDCSPMNOBUIF"
+        android:textColor="@color/white"
+        android:layout_marginTop="300dp"
+        android:layout_below="@+id/first_level"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/randomWords14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ANIOSFUQSMVPSHFOISIQSPVSHOIFHIQNJSI"
+        android:textColor="@color/white"
+        android:layout_marginTop="320dp"
+        android:layout_below="@+id/first_level"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/randomWords17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ASVKVWOPFHIIOWHQPDFQPOJFPQNVSPNA"
+        android:textColor="@color/white"
+        android:layout_marginTop="340dp"
+        android:layout_below="@+id/first_level"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/word"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="@string/enter_word"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:layout_marginTop="400dp"
+        android:layout_below="@+id/first_level"
+        android:gravity="center_horizontal"
+        android:autofillHints="@string/enter_word" />
+
+    <Button
+        android:id="@+id/check_word"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Check word"
+        android:textAlignment="center"
+        android:layout_marginTop="460dp"
+        android:layout_below="@+id/first_level" />
+
+    <Button
+        android:id="@+id/back_to_levels"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Back to Levels"
+        android:textAlignment="center"
+        android:layout_marginTop="550dp"
+        android:layout_below="@+id/first_level" />
+</RelativeLayout>
