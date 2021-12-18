@@ -11,7 +11,6 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.hiddenwords.utils.WordUtils;
-import com.example.hiddenwords.LevelsActivity;
 
 
 import java.util.ArrayList;
@@ -21,7 +20,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Random;
 
-public class FirstLevelActivity extends AppCompatActivity {
+public class SecondLevelActivity extends AppCompatActivity {
     private Button check_word;
     private Button back_to_levels;
     private TextView first_word;
@@ -36,7 +35,7 @@ public class FirstLevelActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_first_level);
+        setContentView(R.layout.activity_second_level);
 
         check_word = findViewById(R.id.check_word);
         back_to_levels = findViewById(R.id.back_to_levels);
@@ -54,7 +53,7 @@ public class FirstLevelActivity extends AppCompatActivity {
         buttonMap.put(fourth_word.getText().toString().toLowerCase(), fourth_word);
 
 
-        back_to_levels.setOnClickListener(s -> startActivity(new Intent(FirstLevelActivity.this, LevelsActivity.class)));
+        back_to_levels.setOnClickListener(s -> startActivity(new Intent(SecondLevelActivity.this, LevelsActivity.class)));
 
         check_word.setOnClickListener(s -> {
             String text = word.getText().toString();
@@ -70,7 +69,7 @@ public class FirstLevelActivity extends AppCompatActivity {
             word.setText("");
             if (correctWords.isEmpty()) {
                 Toast.makeText(getApplicationContext(), R.string.success, Toast.LENGTH_LONG).show();
-                startActivity(new Intent(FirstLevelActivity.this, LevelsActivity.class));
+                startActivity(new Intent(SecondLevelActivity.this, LevelsActivity.class));
             }
         });
     }

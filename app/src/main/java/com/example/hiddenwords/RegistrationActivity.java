@@ -64,6 +64,8 @@ public class RegistrationActivity extends AppCompatActivity implements View.OnCl
                                 startActivity(new Intent(RegistrationActivity.this, MainActivity.class));
                             }
                         });
+                    } else if (singUpTask.getException().getMessage().equals(getString(R.string.firebase_error_invalid_email))) {
+                        error.setText(R.string.incorrect_login);
                     } else {
                         error.setText(R.string.sing_up_error);
                     }

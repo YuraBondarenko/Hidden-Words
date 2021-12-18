@@ -15,7 +15,7 @@ public class UserLevelRepo {
     private static String KEY;
 
     public UserLevelRepo() {
-        databaseReference = FirebaseDatabase.getInstance().getReference("levels");
+        databaseReference = FirebaseDatabase.getInstance().getReference(UserLevel.class.getSimpleName());
         KEY = databaseReference.push().getKey();
     }
 

@@ -50,4 +50,11 @@
     <string name="number">NUMBER</string>
     <string name="cucumber">CUCUMBER</string>
     <string name="engineering">ENGINEERING</string>
+    <string name="second_level">Second Level</string>
+    <string name="disappointment">DISAPPOINTMENT</string>
+    <string name="player">PLAYER</string>
+    <string name="soon">Content will open soon!</string>
+    <string name="transmission">TRANSMISSION</string>
+    <string name="premium">PREMIUM</string>
+    <string name="firebase_error_invalid_email">The email address is badly formatted.</string>
 </resources>
